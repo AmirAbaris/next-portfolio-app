@@ -1,4 +1,6 @@
 import "~/styles/globals.css";
+import '@fontsource/poppins/400.css'; // Regular weight
+import '@fontsource/poppins/700.css'; // Bold weight
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
