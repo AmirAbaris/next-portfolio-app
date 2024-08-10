@@ -3,21 +3,25 @@
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/dropdown';
 import React from 'react'
 import { CiMenuBurger } from 'react-icons/ci';
+import { IoMdClose } from 'react-icons/io';
 
 type TitleType = 'about' | 'experience' | 'project' | 'contact';
 
 const DropDownMenu = () => {
+    const [open, setOpen] = React.useState<boolean>(false);
+
     const handleButtonClick = (key: TitleType) => {
         console.log(`You clicked on ${key}`);
-        // Add navigation logic if needed, e.g., scroll to section or navigate to another page
     };
 
     return (
         <div className='cursor-pointer'>
             <Dropdown>
                 <DropdownTrigger>
-                    <div>
-                        <CiMenuBurger />
+                    <div onClick={() => setOpen(!open)}>
+                        {open
+                            ? <IoMdClose />
+                            : <CiMenuBurger />}
                     </div>
                 </DropdownTrigger>
                 <DropdownMenu>
