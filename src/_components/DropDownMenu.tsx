@@ -11,6 +11,7 @@ const DropDownMenu = () => {
 
     const handleButtonClick = (key: TitleType) => {
         console.log(`You clicked on ${key}`);
+        setOpen(false);
     };
 
     return (
