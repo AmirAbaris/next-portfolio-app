@@ -4,8 +4,7 @@ import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-o
 import React from 'react'
 import { CiMenuBurger } from 'react-icons/ci';
 import { IoMdClose } from 'react-icons/io';
-
-type TitleType = 'about' | 'experience' | 'project' | 'contact';
+import { type TitleType } from '~/types/navigation';
 
 const DropDownMenu = () => {
     const [open, setOpen] = React.useState<boolean>(false);
