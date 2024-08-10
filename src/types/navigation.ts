@@ -1,0 +1,1 @@
+export type TitleType = 'about' | 'experience' | 'project' | 'contact';
