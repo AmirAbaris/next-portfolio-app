@@ -4,26 +4,24 @@ import Image from 'next/image';
 export default function HomePage() {
   return (
     <main className="container mx-auto">
-      <div className='flex flex-col w-full text-center'>
-        {/* <Image className='rounded-full'
-        src="/images/prof1.jpg"
-        width={500}
-        height={500}
-        alt="Picture of the author"
-      /> */}
-        <div className='flex flex-col gap-y-2'>
-          <div className='flex justify-center'>
-            <Image className='rounded-full mb-8'
+      <div className='flex flex-col w-full text-center lg:flex-row lg:gap-x-12 lg:justify-center lg:items-center'>
+        <div className='flex w-full justify-center mt-12 lg:w-auto'>
+          <div className='w-[17rem] lg:w-[23rem]'>
+            <Image
+              className="rounded-full w-full h-auto"
               src="/images/prof1.jpg"
-              width={261}
-              height={261}
+              height={0}
+              width={0}
+              sizes='100vw'
               alt="amir photo"
             />
           </div>
-          <h1 className='text-darkGrey font-semibold text-base'>HELLO, I&apos;M</h1>
-          <h2 className='text-4xl font-extrabold'>Amir Zarei</h2>
-          <h3 className='text-darkGrey font-semibold text-base'>Frontend Developer</h3>
-          <div className='flex flex-wrap w-full justify-center gap-4'>
+        </div>
+        <div className='flex flex-col gap-y-2 mt-8'>
+          <h1 className='text-darkGrey font-extrabold text-base'>Hello, I&apos;m</h1>
+          <h2 className='text-[2rem] font-extrabold md:text-[3rem]'>Amir Zarei</h2>
+          <h3 className='text-darkGrey font-semibold text-[1.25rem] md:text-3xl'>Frontend Developer</h3>
+          <div className='flex flex-wrap w-full justify-center gap-4 p-2'>
             <Button className='font-semibold hover:bg-black hover:text-white' radius="full" variant="bordered">
               Download CV
             </Button>
