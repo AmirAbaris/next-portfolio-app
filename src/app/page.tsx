@@ -1,4 +1,4 @@
-import { Button } from '@nextui-org/react';
+import { Button, Link } from '@nextui-org/react';
 import Image from 'next/image';
 
 export default function HomePage() {
@@ -13,7 +13,7 @@ export default function HomePage() {
               height={0}
               width={0}
               sizes='100vw'
-              alt="amir photo"
+              alt="amirs main photo"
             />
           </div>
         </div>
@@ -30,18 +30,22 @@ export default function HomePage() {
             </Button>
           </div>
           <div className='flex flex-wrap w-full justify-center gap-4'>
-            <Image
-              src="/images/linkedin.png"
-              width={32}
-              height={32}
-              alt="linkedin logo"
-            />
-            <Image
-              src="/images/github.svg"
-              width={32}
-              height={32}
-              alt="github logo"
-            />
+            <Link href="https://www.linkedin.com/in/amir-mahdi-zarei-nejad-40005526a/">
+              <Image className='cursor-pointer'
+                src="/images/linkedin.png"
+                width={32}
+                height={32}
+                alt="linkedin logo"
+              />
+            </Link>
+            <Link href="https://github.com/AmirAbaris">
+              <Image className='cursor-pointer'
+                src="/images/github.svg"
+                width={32}
+                height={32}
+                alt="github logo"
+              />
+            </Link>
           </div>
         </div>
       </div>
