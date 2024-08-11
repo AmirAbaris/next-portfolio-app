@@ -30,8 +30,8 @@ const ProfileOverview = () => {
                 </div>
                 <div className='flex flex-wrap w-full justify-center gap-4'>
                     <Link href="https://www.linkedin.com/in/amir-mahdi-zarei-nejad-40005526a/">
-                        <Image className='cursor-pointer'
-                            src="/images/linkedin.png"
+                        <Image className='cursor-pointer rounded-md'
+                            src="/images/linkedin.svg"
                             width={32}
                             height={32}
                             alt="linkedin logo"
