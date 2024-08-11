@@ -1,7 +1,6 @@
 import ProfileOverview from "~/_components/ProfileOverview";
 import SectionHeader from "~/_components/SectionHeader";
 
-
 export default function HomePage() {
   return (
     <main className="container mx-auto">
