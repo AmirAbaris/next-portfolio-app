@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const ProfileOverview = () => {
     return (
-        <div className='flex flex-col w-full text-center lg:flex-row lg:gap-x-12 lg:justify-center lg:items-center'>
-            <div className='flex w-full justify-center mt-12 lg:w-auto'>
+        <div className='flex flex-col w-full text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
+            <div className='flex w-full justify-center lg:w-auto'>
                 <div className='w-[17rem] lg:w-[23rem]'>
                     <Image
                         className="rounded-full w-full h-auto"
