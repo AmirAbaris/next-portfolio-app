@@ -1,7 +1,9 @@
 import "~/styles/globals.css";
-
+import '@fontsource/poppins/400.css';
+import {NextUIProvider} from "@nextui-org/react";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import Navbar from "~/_components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -14,7 +16,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body>
+      <NextUIProvider>
+        <Navbar />
+        {children}
+      </NextUIProvider>
+      </body>
     </html>
   );
 }
