@@ -8,7 +8,7 @@ interface AboutMeBorderBoxProps {
 const AboutMeBorderBox = ({ iconPath, title, subTitle }: AboutMeBorderBoxProps) => {
 
   return (
-    <div className='border border-mediumGrey rounded-3xl p-6 text-center aspect-video flex flex-col items-center justify-center w-full'>
+    <div className='border border-mediumGrey rounded-3xl text-center p-6 flex flex-col items-center justify-center w-full'>
       <Image
         src={iconPath}
         height={32}

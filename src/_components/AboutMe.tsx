@@ -3,8 +3,8 @@ import AboutMeBorderBox from './AboutMeBorderBox';
 
 const AboutMe = () => {
     return (
-        <div className='grid grid-cols-1 gap-y-10 items-center lg:grid-cols-2'>
-            <div className='w-[11rem] lg:w-[23rem] mx-auto'>
+        <div className='flex flex-col gap-8 items-center lg:flex-row'>
+            <div className='w-[11rem] lg:w-[38rem] mx-auto'>
                 <Image
                     className="rounded-3xl w-full h-auto object-cover aspect-square"
                     src="/images/prof2.jpg"
@@ -13,7 +13,7 @@ const AboutMe = () => {
                     alt="Amir's secondary photo"
                 />
             </div>
-            <div className='grid grid-cols-1 gap-8 px-16 w-full sm:grid-cols-2 lg:px-0 lg:grid'>
+            <div className='grid grid-cols-1 gap-8 w-full sm:grid-cols-2 lg:px-0'>
                 <AboutMeBorderBox iconPath='/images/medal.svg' title='Experience' subTitle='6 Months Frontend Internship' />
                 <AboutMeBorderBox iconPath='/images/person.svg' title='Education' subTitle='Computer Science Student' />
                 <p className='col-span-full'>
