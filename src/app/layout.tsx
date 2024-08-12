@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
 import '@fontsource/poppins/400.css';
-import {NextUIProvider} from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import Navbar from "~/_components/Navbar";
@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-      <NextUIProvider>
-        <Navbar />
-        {children}
-      </NextUIProvider>
+        <NextUIProvider>
+          <Navbar />
+          {children}
+        </NextUIProvider>
       </body>
     </html>
   );

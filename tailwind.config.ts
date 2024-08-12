@@ -1,6 +1,5 @@
 import { nextui } from "@nextui-org/react";
 import { type Config } from "tailwindcss";
-// import { fontFamily } from "tailwindcss/defaultTheme";
 
 export default {
   content: [
@@ -10,11 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkGrey: '#555555'
+        darkGrey: '#555555',
+        mediumGrey: '#A3A3A3'
       },
-      // fontFamily: {
-      //   sans: ["var(--font-geist-sans)", ...fontFamily.sans],
-      // },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },

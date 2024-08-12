@@ -3,15 +3,14 @@ import Image from 'next/image';
 
 const ProfileOverview = () => {
     return (
-        <div className='flex flex-col w-full text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
+        <div className='flex flex-col text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
             <div className='flex w-full justify-center lg:w-auto'>
                 <div className='w-[17rem] lg:w-[23rem]'>
                     <Image
                         className="rounded-full w-full h-auto"
                         src="/images/prof1.jpg"
-                        height={0}
-                        width={0}
-                        sizes='100vw'
+                        height={577}
+                        width={583}
                         alt="amirs main photo"
                     />
                 </div>

@@ -6,7 +6,7 @@ interface SectionHeaderProps {
 }
 const SectionHeader = ({ title, subTitle }: SectionHeaderProps) => {
     return (
-        <div className='flex flex-col gap-y-2 text-center w-full'>
+        <div className='flex flex-col gap-y-2 text-center'>
             <h1 className='text-base text-darkGrey'>{subTitle}</h1>
             <h2 className='text-5xl text-black font-extrabold'>{title}</h2>
         </div>
