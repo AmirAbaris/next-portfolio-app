@@ -1,19 +1,25 @@
-import Link from "next/link";
 import NavbarButtonList from "./NavbarButtonList";
 import DropDownMenu from "./DropDownMenu";
+import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 
-const Navbar = () => {
+const NavbarItems = () => {
     return (
-        <div className="flex flex-wrap items-center justify-between p-16 font-poppins">
-            <Link className="text-2xl" href={''}>Amir Zarei</Link>
-            <div className="hidden lg:block">
-                <NavbarButtonList />
+        <Navbar>
+            <NavbarBrand>
+                <p className="font-bold text-2xl">Amir Zarei</p>
+            </NavbarBrand>
+            <div className="hidden lg:flex">
+                <NavbarContent justify="center">
+                    <NavbarButtonList />
+                </NavbarContent>
             </div>
-            <div className="block lg:hidden">
-                <DropDownMenu />
+            <div className="flex lg:hidden">
+                <NavbarContent>
+                    <DropDownMenu />
+                </NavbarContent>
             </div>
-        </div>
+        </Navbar>
     );
 }
 
-export default Navbar;
+export default NavbarItems;
