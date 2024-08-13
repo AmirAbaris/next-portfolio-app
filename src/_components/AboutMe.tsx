@@ -17,10 +17,7 @@ const AboutMe = () => {
                 <AboutMeBorderBox iconPath='/images/medal.svg' title='Experience' subTitle='6 Months Frontend Internship' />
                 <AboutMeBorderBox iconPath='/images/person.svg' title='Education' subTitle='Computer Science Student' />
                 <p className='col-span-full'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem,
-                    dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus sint delectus velit
-                    in eos quo officiis explicabo deleniti dignissimos. Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                    reiciendis ea magnam? Nulla, impedit fuga!
+                    I kicked off my journey with a 6-month internship, diving deep into Angulars magical world. After mastering components, services, and all those *ngIf/*ngFor goodies, I decided to spice things up by switching to React and Next.js. Now, Im on a mission to craft snappy, seamless user experiences and bring the latest web technologies to life.
                 </p>
             </div>
         </div>
