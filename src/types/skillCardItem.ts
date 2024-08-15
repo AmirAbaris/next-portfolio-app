@@ -1,4 +1,6 @@
+import { type SkillLevel } from "./skillLevel";
+
 export interface SkillCardItemProps {
     skillName: string;
-    skillLevel: string;
+    skillLevel: SkillLevel;
 }

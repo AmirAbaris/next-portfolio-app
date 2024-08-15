@@ -7,9 +7,9 @@ interface SkillCardBorderBoxProps {
 
 const SkillCardBorderBox = ({ skillCardItem }: SkillCardBorderBoxProps) => {
   return (
-    <div className='border border-mediumGrey rounded-3xl text-center p-6 flex flex-col items-center justify-center w-fit'>
-      <div className="flex flex-col items-center gap-y-10">
-        <h1 className="text-2xl text-darkGrey font-semibold">Frontend Development</h1>
+    <div className='border border-mediumGrey rounded-3xl text-center p-6 flex flex-col gap-y-2 items-center justify-center w-fit'>
+      <h1 className="text-2xl text-darkGrey font-semibold">Frontend Development</h1>
+      <div className="flex flex-col items-center justify-center gap-y-10 flex-1">
         <div className="flex flex-col gap-y-8">
           {skillCardItem.map((item, index) => (
             <SkillCardItem key={index} {...item} />
