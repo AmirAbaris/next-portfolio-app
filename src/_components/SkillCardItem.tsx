@@ -1,18 +1,16 @@
-import { RiVerifiedBadgeFill } from 'react-icons/ri';
+import { VscVerifiedFilled } from 'react-icons/vsc';
 import { type SkillCardItemProps } from '~/types/skillCardItem';
 
 const SkillCardItem = ({ skillName, skillLevel }: SkillCardItemProps) => {
     return (
-        <div className='flex gap-x-4'>
-            <div className='p-1 mt-1'>
-                <RiVerifiedBadgeFill className='scale-150' />
+        <article className='flex items-center justify-center gap-x-4'>
+            <VscVerifiedFilled className='h-8 w-8 flex-shrink-0' />
+            <div className='flex flex-col text-start flex-grow'>
+                <h1 className='text-lg font-extrabold truncate'>{skillName}</h1>
+                <p className='text-darkGrey truncate'>{skillLevel}</p>
             </div>
-            <div className='flex flex-col text-start'>
-                <h1 className='text-lg font-extrabold'>{skillName}</h1>
-                <p className='text-darkGrey'>{skillLevel}</p>
-            </div>
-        </div>
-    )
-}
+        </article>
+    );
+};
 
 export default SkillCardItem;

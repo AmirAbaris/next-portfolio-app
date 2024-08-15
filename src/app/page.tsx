@@ -8,12 +8,12 @@ export default function HomePage() {
 
   return (
     <main className="container mx-auto">
-      <div className="flex flex-col gap-y-28">
+      <div className="flex flex-col items-center gap-y-28">
         <ProfileOverview />
         <SectionHeader subTitle="Get To Know More " title="About Me" />
         <AboutMe />
         <SectionHeader subTitle="Explore My " title="Experience" />
-        <div className="flex justify-center gap-x-8">
+        <div className="grid grid-cols-1 gap-8 xl:grid-cols-2">
           <SkillCardBorderBox skillCardItem={devSkills} />
           <SkillCardBorderBox skillCardItem={generalSkills} />
         </div>

@@ -10,5 +10,7 @@ export const devSkills: SkillCardItemProps[] = [
 ];
 
 export const generalSkills: SkillCardItemProps[] = [
-    { skillName: "Git", skillLevel: "Experienced" }
+    { skillName: "Git", skillLevel: "Experienced" },
+    { skillName: "Agile", skillLevel: "Intermediate" },
+    { skillName: "Problem Solving", skillLevel: "Experienced" }
 ];
