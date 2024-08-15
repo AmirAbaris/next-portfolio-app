@@ -10,7 +10,7 @@ interface ProjectItemBorderBoxProps {
 
 const ProjectItemBorderBox = ({ imagePath, title, githubLink }: ProjectItemBorderBoxProps) => {
     return (
-        <div className='border border-mediumGrey rounded-3xl text-center p-6 flex flex-col gap-y-8 items-center justify-center w-fit lg:w-auto'>
+        <div className='border border-mediumGrey rounded-3xl text-center p-6 flex flex-col gap-y-8'>
             <Image className='rounded-[2rem] w-full h-auto' src={imagePath} width={0} height={0} sizes='100vh' alt={title} />
             <h1 className="text-3xl font-semibold">Project Title</h1>
             <Link href={githubLink}>
