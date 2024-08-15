@@ -17,6 +17,7 @@ export default function HomePage() {
           <SkillCardBorderBox skillCardItem={devSkills} />
           <SkillCardBorderBox skillCardItem={generalSkills} />
         </div>
+        <SectionHeader subTitle="Browse My Recent " title="Projects" />
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
-import { Button, Link } from '@nextui-org/react';
+import { Link } from '@nextui-org/react';
 import Image from 'next/image';
+import PrimaryButton from './PrimaryButton';
 
 const ProfileOverview = () => {
     return (
@@ -20,12 +21,8 @@ const ProfileOverview = () => {
                 <h2 className='text-[2rem] font-extrabold md:text-[3rem]'>Amir Zarei</h2>
                 <h3 className='text-darkGrey font-semibold text-[1.25rem] md:text-3xl'>Frontend Developer</h3>
                 <div className='flex flex-wrap w-full justify-center gap-4 p-2'>
-                    <Button className='font-semibold hover:bg-black hover:text-white' radius="full" variant="bordered">
-                        Download CV
-                    </Button>
-                    <Button className='bg-black text-white font-semibold' radius="full">
-                        Contact Info
-                    </Button>
+                    <PrimaryButton>Download CV</PrimaryButton>
+                    <PrimaryButton customColor='black'>Contact Info</PrimaryButton>
                 </div>
                 <div className='flex flex-wrap w-full justify-center gap-4'>
                     <Link href="https://www.linkedin.com/in/amir-mahdi-zarei-nejad-40005526a/">
