@@ -4,7 +4,7 @@ import AboutMeBorderBox from './AboutMeBorderBox';
 const AboutMe = () => {
     return (
         <div className='flex flex-col gap-8 items-center lg:flex-row'>
-            <div className='w-3/5 mx-auto sm:w-4/5 lg:w-1/2'>
+            <div className='mx-auto w-4/5 md:w-2/3 lg:w-1/2'>
                 <Image
                     className="rounded-3xl w-full h-auto object-cover aspect-square"
                     src="/images/prof2.jpg"
