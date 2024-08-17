@@ -21,11 +21,13 @@ const ProfileOverview = () => {
                 <h2 className='text-[2rem] font-extrabold md:text-[3rem]'>Amir Zarei</h2>
                 <h3 className='text-darkGrey font-semibold text-[1.25rem] md:text-3xl'>Frontend Developer</h3>
                 <div className='flex flex-wrap w-full justify-center gap-4 p-2'>
-                    <PrimaryButton>Download CV</PrimaryButton>
+                    <a href="/cv/resume-15.pdf" download="resume-15.pdf">
+                        <PrimaryButton>Download CV</PrimaryButton>
+                    </a>
                     <PrimaryButton customColor='black'>Contact Info</PrimaryButton>
                 </div>
                 <div className='flex flex-wrap w-full justify-center gap-4'>
-                    <Link href="https://www.linkedin.com/in/amir-mahdi-zarei-nejad-40005526a/">
+                    <Link href="https://www.linkedin.com/in/amir-mahdi-zarei-nejad-40005526a/" target="_blank">
                         <Image className='cursor-pointer rounded-md'
                             src="/images/linkedin.svg"
                             width={32}
@@ -33,7 +35,7 @@ const ProfileOverview = () => {
                             alt="linkedin logo"
                         />
                     </Link>
-                    <Link href="https://github.com/AmirAbaris">
+                    <Link href="https://github.com/AmirAbaris" target="_blank">
                         <Image className='cursor-pointer'
                             src="/images/github.svg"
                             width={32}
