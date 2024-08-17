@@ -6,7 +6,6 @@ import SkillCardBorderBox from "~/_components/SkillCardBorderBox";
 import { devSkills, generalSkills } from "~/data/skills";
 
 export default function HomePage() {
-
   return (
     <main className="container mx-auto">
       <div className="flex flex-col items-center gap-y-28">
@@ -20,8 +19,8 @@ export default function HomePage() {
         </div>
         <SectionHeader subTitle="Browse My Recent " title="Projects" />
         <div className="flex flex-col gap-8 md:flex-row">
-          <ProjectItemBorderBox imagePath="/images/test-temp.jpg" title="Project Title" githubLink="https://github.com/" />
-          <ProjectItemBorderBox imagePath="/images/test-temp.jpg" title="Project Title" githubLink="https://github.com/" />
+          <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
+          <ProjectItemBorderBox imagePath="/images/eg.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
         </div>
       </div>
     </main>
