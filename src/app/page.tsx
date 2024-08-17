@@ -1,5 +1,6 @@
 import AboutMe from "~/_components/AboutMe";
 import ContactMeBorderBox from "~/_components/ContactMeBorderBox";
+import NavbarButtonList from "~/_components/NavbarButtonList";
 import ProfileOverview from "~/_components/ProfileOverview";
 import ProjectItemBorderBox from "~/_components/ProjectItemBorderBox";
 import SectionHeader from "~/_components/SectionHeader";
@@ -8,7 +9,7 @@ import { devSkills, generalSkills } from "~/data/skills";
 
 export default function HomePage() {
   return (
-    <main className="container mx-auto max-w-5xl">
+    <main className="container mx-auto max-w-5xl px-6 md:px-0">
       <div className="flex flex-col items-center gap-y-56">
         <ProfileOverview />
         <div className="flex flex-col gap-y-12" id="about">
@@ -32,6 +33,9 @@ export default function HomePage() {
         <div className="flex flex-col gap-y-12" id="contact">
           <SectionHeader subTitle="Get in Touch" title="Contact Me" />
           <ContactMeBorderBox />
+        </div>
+        <div className="pb-12">
+          <NavbarButtonList />
         </div>
       </div>
     </main>

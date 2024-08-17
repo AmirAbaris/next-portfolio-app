@@ -1,6 +1,9 @@
+'use client';
+
 import { Link } from '@nextui-org/react';
 import Image from 'next/image';
 import PrimaryButton from './PrimaryButton';
+import scrollToSection from '~/utils/scrollToSection';
 
 const ProfileOverview = () => {
     return (
@@ -24,7 +27,7 @@ const ProfileOverview = () => {
                     <a href="/cv/resume-15.pdf" download="resume-15.pdf">
                         <PrimaryButton>Download CV</PrimaryButton>
                     </a>
-                    <PrimaryButton customColor='black'>Contact Info</PrimaryButton>
+                    <PrimaryButton onClick={() => scrollToSection('contact')} customColor='black'>Contact Info</PrimaryButton>
                 </div>
                 <div className='flex flex-wrap w-full justify-center gap-4'>
                     <Link href="https://www.linkedin.com/in/amir-mahdi-zarei-nejad-40005526a/" target="_blank">
