@@ -8,7 +8,7 @@ import { devSkills, generalSkills } from "~/data/skills";
 
 export default function HomePage() {
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto max-w-5xl">
       <div className="flex flex-col items-center gap-y-56">
         <ProfileOverview />
         <div className="flex flex-col gap-y-12" id="about">

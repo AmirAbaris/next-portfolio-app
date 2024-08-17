@@ -10,7 +10,7 @@ const SkillCardBorderBox = ({ skillCardItem }: SkillCardBorderBoxProps) => {
     <div className='border border-mediumGrey rounded-3xl text-center p-6 flex flex-col gap-y-8 items-center justify-center w-fit lg:w-auto'>
       <h1 className="text-2xl text-darkGrey font-semibold">Frontend Development</h1>
       <div className="flex flex-col items-center justify-center gap-y-10 flex-1">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {skillCardItem.map((item, index) => (
             <SkillCardItem key={index} {...item} />
           ))}
