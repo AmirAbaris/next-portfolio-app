@@ -9,8 +9,8 @@ import { devSkills, generalSkills } from "~/data/skills";
 
 export default function HomePage() {
   return (
-    <main className="container mx-auto max-w-5xl px-6 md:px-0">
-      <div className="flex flex-col items-center gap-y-56">
+    <main className="container mx-auto max-w-5xl px-6 lg:px-0">
+      <div className="flex flex-col items-center gap-y-20 lg:gap-y-56">
         <ProfileOverview />
         <section className="flex flex-col gap-y-12" id="about">
           <SectionHeader subTitle="Get To Know More " title="About Me" />

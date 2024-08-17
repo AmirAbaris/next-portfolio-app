@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 
 const NavbarItems = () => {
     return (
-        <Navbar className="mb-56">
+        <Navbar className="mb-12 lg:mb-56">
             <NavbarBrand>
                 <p className="font-bold text-2xl">Amir Zarei</p>
             </NavbarBrand>
