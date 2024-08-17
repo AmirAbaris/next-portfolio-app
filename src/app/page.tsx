@@ -9,22 +9,28 @@ import { devSkills, generalSkills } from "~/data/skills";
 export default function HomePage() {
   return (
     <main className="container mx-auto">
-      <div className="flex flex-col items-center gap-y-28">
+      <div className="flex flex-col items-center gap-y-56">
         <ProfileOverview />
         <SectionHeader subTitle="Get To Know More " title="About Me" />
         <AboutMe />
-        <SectionHeader subTitle="Explore My " title="Experience" />
-        <div className="grid grid-cols-1 gap-8 xl:grid-cols-2">
-          <SkillCardBorderBox skillCardItem={devSkills} />
-          <SkillCardBorderBox skillCardItem={generalSkills} />
+        <div className="flex flex-col gap-y-12">
+          <SectionHeader subTitle="Explore My " title="Experience" />
+          <div className="grid grid-cols-1 gap-8 xl:grid-cols-2">
+            <SkillCardBorderBox skillCardItem={devSkills} />
+            <SkillCardBorderBox skillCardItem={generalSkills} />
+          </div>
         </div>
-        <SectionHeader subTitle="Browse My Recent" title="Projects" />
-        <div className="flex flex-col gap-8 md:flex-row">
-          <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
-          <ProjectItemBorderBox imagePath="/images/epic.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
+        <div className="flex flex-col gap-y-12">
+          <SectionHeader subTitle="Browse My Recent" title="Projects" />
+          <div className="flex flex-col gap-8 md:flex-row">
+            <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
+            <ProjectItemBorderBox imagePath="/images/epic.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
+          </div>
         </div>
-        <SectionHeader subTitle="Get in Touch" title="Contact Me" />
-        <ContactMeBorderBox />
+        <div className="flex flex-col gap-y-12">
+          <SectionHeader subTitle="Get in Touch" title="Contact Me" />
+          <ContactMeBorderBox />
+        </div>
       </div>
     </main>
   );
