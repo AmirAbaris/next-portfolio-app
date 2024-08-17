@@ -2,10 +2,11 @@
 
 import { type TitleType } from '~/types/navigation';
 import NavbarButton from './NavbarButton';
+import scrollToSection from '~/utils/scrollToSection';
 
 const NavbarButtonList = () => {
     const handleButtonClick = (key: TitleType) => {
-        console.log(`You clicked on ${key}`);
+        scrollToSection(key);
     };
 
     return (

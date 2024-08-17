@@ -1,17 +1,17 @@
 'use client';
 
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/dropdown';
-import React from 'react'
+import React from 'react';
 import { CiMenuBurger } from 'react-icons/ci';
 import { IoMdClose } from 'react-icons/io';
 import { type TitleType } from '~/types/navigation';
+import scrollToSection from '~/utils/scrollToSection';
 
 const DropDownMenu = () => {
     const [open, setOpen] = React.useState<boolean>(false);
 
     const handleButtonClick = (key: TitleType) => {
-        console.log(`You clicked on ${key}`);
-        setOpen(false);
+        scrollToSection(key);
     };
 
     return (
