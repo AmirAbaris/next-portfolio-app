@@ -11,8 +11,10 @@ export default function HomePage() {
     <main className="container mx-auto">
       <div className="flex flex-col items-center gap-y-56">
         <ProfileOverview />
-        <SectionHeader subTitle="Get To Know More " title="About Me" />
-        <AboutMe />
+        <div className="flex flex-col gap-y-12">
+          <SectionHeader subTitle="Get To Know More " title="About Me" />
+          <AboutMe />
+        </div>
         <div className="flex flex-col gap-y-12">
           <SectionHeader subTitle="Explore My " title="Experience" />
           <div className="grid grid-cols-1 gap-8 xl:grid-cols-2">
