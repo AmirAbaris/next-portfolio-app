@@ -4,12 +4,13 @@ import AboutMeBorderBox from './AboutMeBorderBox';
 const AboutMe = () => {
     return (
         <div className='flex flex-col gap-8 items-center lg:flex-row'>
-            <div className='w-[17rem] lg:w-[38rem] mx-auto'>
+            <div className='w-3/5 mx-auto sm:w-4/5 lg:w-1/2'>
                 <Image
                     className="rounded-3xl w-full h-auto object-cover aspect-square"
                     src="/images/prof2.jpg"
-                    height={3024}
-                    width={4032}
+                    height={0}
+                    width={0}
+                    sizes='100vh'
                     alt="Amir's secondary photo"
                 />
             </div>

@@ -9,15 +9,14 @@ const ProfileOverview = () => {
     return (
         <div className='flex flex-col text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
             <div className='flex w-full justify-center lg:w-auto'>
-                <div className='w-[17rem] lg:w-[23rem]'>
-                    <Image
-                        className="rounded-full w-full h-auto"
-                        src="/images/prof1.jpg"
-                        height={577}
-                        width={583}
-                        alt="amirs main photo"
-                    />
-                </div>
+                <Image
+                    className="rounded-full w-full h-auto"
+                    src="/images/prof1.jpg"
+                    height={0}
+                    width={0}
+                    sizes='100vh'
+                    alt="amirs main photo"
+                />
             </div>
             <div className='flex flex-col gap-y-2 mt-8'>
                 <h1 className='text-darkGrey font-extrabold text-base'>Hello, I&apos;m</h1>
