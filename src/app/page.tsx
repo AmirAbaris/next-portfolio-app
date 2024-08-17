@@ -20,7 +20,7 @@ export default function HomePage() {
         <SectionHeader subTitle="Browse My Recent " title="Projects" />
         <div className="flex flex-col gap-8 md:flex-row">
           <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
-          <ProjectItemBorderBox imagePath="/images/eg.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
+          <ProjectItemBorderBox imagePath="/images/epic.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
         </div>
       </div>
     </main>
