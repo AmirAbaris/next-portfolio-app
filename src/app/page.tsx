@@ -1,4 +1,5 @@
 import AboutMe from "~/_components/AboutMe";
+import ContactMeBorderBox from "~/_components/ContactMeBorderBox";
 import ProfileOverview from "~/_components/ProfileOverview";
 import ProjectItemBorderBox from "~/_components/ProjectItemBorderBox";
 import SectionHeader from "~/_components/SectionHeader";
@@ -17,11 +18,13 @@ export default function HomePage() {
           <SkillCardBorderBox skillCardItem={devSkills} />
           <SkillCardBorderBox skillCardItem={generalSkills} />
         </div>
-        <SectionHeader subTitle="Browse My Recent " title="Projects" />
+        <SectionHeader subTitle="Browse My Recent" title="Projects" />
         <div className="flex flex-col gap-8 md:flex-row">
           <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
           <ProjectItemBorderBox imagePath="/images/epic.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
         </div>
+        <SectionHeader subTitle="Get in Touch" title="Contact Me" />
+        <ContactMeBorderBox />
       </div>
     </main>
   );
