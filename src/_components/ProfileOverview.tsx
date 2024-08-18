@@ -23,7 +23,7 @@ const ProfileOverview = () => {
                 <h2 className='text-[2rem] font-extrabold md:text-[3rem]'>Amir Zarei</h2>
                 <h3 className='text-darkGrey font-semibold text-[1.25rem] md:text-3xl'>Frontend Developer</h3>
                 <div className='flex flex-wrap w-full justify-center gap-4 p-2'>
-                    <a href="/cv/resume-15.pdf" download target="_blank" rel="noopener noreferrer">
+                    <a href="https://utfs.io/f/a159ce10-e452-4fce-94b2-8a9fa83a6511-u325oc.pdf" download target="_blank" rel="noopener noreferrer">
                         <PrimaryButton>Download CV</PrimaryButton>
                     </a>
                     <PrimaryButton onClick={() => scrollToSection('contact')} customColor='black'>Contact Info</PrimaryButton>
