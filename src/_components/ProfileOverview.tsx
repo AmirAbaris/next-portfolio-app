@@ -23,7 +23,7 @@ const ProfileOverview = () => {
                 <h2 className='text-[2rem] font-extrabold md:text-[3rem]'>Amir Zarei</h2>
                 <h3 className='text-darkGrey font-semibold text-[1.25rem] md:text-3xl'>Frontend Developer</h3>
                 <div className='flex flex-wrap w-full justify-center gap-4 p-2'>
-                    <a href="/cv/resume-15.pdf" download="resume-15.pdf">
+                    <a href="/cv/resume-15.pdf" download>
                         <PrimaryButton>Download CV</PrimaryButton>
                     </a>
                     <PrimaryButton onClick={() => scrollToSection('contact')} customColor='black'>Contact Info</PrimaryButton>
