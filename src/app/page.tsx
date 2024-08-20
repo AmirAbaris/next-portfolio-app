@@ -27,9 +27,9 @@ export default function HomePage() {
         </section>
         <section className="flex flex-col gap-y-12" id="project">
           <SectionHeader subTitle="Browse My Recent" title="Projects" />
-          <div className="flex flex-col gap-8 md:flex-row">
-            <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
-            <ProjectItemBorderBox imagePath="/images/epic.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <ProjectItemBorderBox imagePath="/images/dash.png" imageWidth={3204} imageHeight={1726} title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
+            <ProjectItemBorderBox imagePath="/images/epic.png" imageWidth={1910} imageHeight={1094} title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
           </div>
         </section>
         <section className="flex flex-col gap-y-12" id="contact">

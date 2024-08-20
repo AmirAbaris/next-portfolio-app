@@ -8,9 +8,9 @@ import ImageWithLoader from './ImageWithLoader';
 
 const ProfileOverview = () => {
     return (
-        <div className='flex flex-col text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
-            <div className='flex w-full justify-center lg:w-auto'>
-                <ImageWithLoader src="/images/prof1.jpg" alt="amirs main photo" borderRadius='rounded-full' isPriority />
+        <div className='flex flex-col text-center items-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
+            <div className='flex justify-center w-1/2 lg:w-1/3'>
+                <ImageWithLoader src="/images/prof1.jpg" alt="amirs main photo" borderRadius='rounded-full' width={577} height={583} isPriority />
             </div>
             <div className='flex flex-col gap-y-2 mt-8'>
                 <h1 className='text-darkGrey font-extrabold text-base'>Hello, I&apos;m</h1>

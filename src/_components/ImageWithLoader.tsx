@@ -6,12 +6,14 @@ import Image from 'next/image';
 interface ImageWithLoaderProps {
     src: string;
     alt: string;
+    width: number;
+    height: number;
     borderRadius?: 'rounded-none' | 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-xl' | 'rounded-2xl' | 'rounded-3xl' | 'rounded-full';
     className?: string;
     isPriority?: boolean;
 }
 
-const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className, isPriority }: ImageWithLoaderProps) => {
+const ImageWithLoader = ({ src, alt, width, height, borderRadius = 'rounded-none', className, isPriority }: ImageWithLoaderProps) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const handleLoadingComplete = () => {
@@ -31,15 +33,11 @@ const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className, i
             <Image
                 className={`${className} ${borderRadius} transition-opacity duration-500 ${isLoading ? "opacity-0" : "opacity-100"}`}
                 src={src}
-                sizes="100vh"
                 alt={alt}
-                fill
+                width={width}
+                height={height}
                 priority={isPriority}
                 onLoadingComplete={handleLoadingComplete}
-                style={{
-                    width: '100%',
-                    height: 'auto',
-                }}
             />
         </div>
     );
