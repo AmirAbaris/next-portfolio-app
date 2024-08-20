@@ -33,8 +33,7 @@ const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className, i
                 src={src}
                 sizes="100vh"
                 alt={alt}
-                width={0}
-                height={0}
+                fill
                 priority={isPriority}
                 onLoadingComplete={handleLoadingComplete}
                 style={{

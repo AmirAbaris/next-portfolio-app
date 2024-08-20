@@ -1,11 +1,13 @@
-import AboutMe from "~/_components/AboutMe";
-import ContactMeBorderBox from "~/_components/ContactMeBorderBox";
-import NavbarButtonList from "~/_components/NavbarButtonList";
-import ProfileOverview from "~/_components/ProfileOverview";
-import ProjectItemBorderBox from "~/_components/ProjectItemBorderBox";
-import SectionHeader from "~/_components/SectionHeader";
-import SkillCardBorderBox from "~/_components/SkillCardBorderBox";
-import { devSkills, generalSkills } from "~/data/skills";
+import dynamic from 'next/dynamic';
+import { devSkills, generalSkills } from '~/data/skills';
+
+const AboutMe = dynamic(() => import('~/_components/AboutMe'));
+const ContactMeBorderBox = dynamic(() => import('~/_components/ContactMeBorderBox'));
+const NavbarButtonList = dynamic(() => import('~/_components/NavbarButtonList'));
+const ProfileOverview = dynamic(() => import('~/_components/ProfileOverview'));
+const ProjectItemBorderBox = dynamic(() => import('~/_components/ProjectItemBorderBox'));
+const SectionHeader = dynamic(() => import('~/_components/SectionHeader'));
+const SkillCardBorderBox = dynamic(() => import('~/_components/SkillCardBorderBox'));
 
 export default function HomePage() {
   return (

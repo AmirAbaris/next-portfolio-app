@@ -6,8 +6,8 @@ import { type Metadata } from "next";
 import Navbar from "~/_components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Amir Zarei",
-  description: "Portfolio Website of Amir Zarei",
+  title: "Amir Zarei - Frontend Developer",
+  description: "Portfolio website showcasing the work and skills of Amir Zarei.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
