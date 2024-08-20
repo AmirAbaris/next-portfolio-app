@@ -8,9 +8,10 @@ interface ImageWithLoaderProps {
     alt: string;
     borderRadius?: 'rounded-none' | 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-xl' | 'rounded-2xl' | 'rounded-3xl' | 'rounded-full';
     className?: string;
+    isPriority?: boolean;
 }
 
-const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className }: ImageWithLoaderProps) => {
+const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className, isPriority }: ImageWithLoaderProps) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const handleLoadingComplete = () => {
@@ -34,6 +35,7 @@ const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className }:
                 alt={alt}
                 width={0}
                 height={0}
+                priority={isPriority}
                 onLoadingComplete={handleLoadingComplete}
                 style={{
                     width: '100%',
