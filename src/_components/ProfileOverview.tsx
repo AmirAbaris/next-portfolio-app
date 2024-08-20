@@ -4,19 +4,13 @@ import { Link } from '@nextui-org/react';
 import Image from 'next/image';
 import PrimaryButton from './PrimaryButton';
 import scrollToSection from '~/utils/scrollToSection';
+import ImageWithLoader from './ImageWithLoader';
 
 const ProfileOverview = () => {
     return (
         <div className='flex flex-col text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
             <div className='flex w-full justify-center lg:w-auto'>
-                <Image
-                    className="rounded-full w-full h-auto"
-                    src="/images/prof1.jpg"
-                    height={0}
-                    width={0}
-                    sizes='100vh'
-                    alt="amirs main photo"
-                />
+                <ImageWithLoader src="/images/prof1.jpg" alt="amirs main photo" borderRadius='rounded-full' />
             </div>
             <div className='flex flex-col gap-y-2 mt-8'>
                 <h1 className='text-darkGrey font-extrabold text-base'>Hello, I&apos;m</h1>
