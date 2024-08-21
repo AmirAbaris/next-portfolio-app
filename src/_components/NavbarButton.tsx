@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from "@nextui-org/react";
 import { type NavbarButtonProps } from "~/types/buttons";
 
