@@ -37,7 +37,7 @@ const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className, i
                 sizes="100vw"
                 priority={isPriority}
                 onLoadingComplete={handleLoadingComplete}
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
             />
         </div>
     );

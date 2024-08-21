@@ -9,7 +9,7 @@ import ImageWithLoader from './ImageWithLoader';
 const ProfileOverview = () => {
     return (
         <div className='flex flex-col text-center lg:flex-row lg:gap-x-16 lg:justify-center lg:items-center'>
-            <div className='flex w-full justify-center lg:w-auto'>
+            <div className='flex justify-center lg:w-auto'>
                 <ImageWithLoader src="/images/prof1.jpg" alt="amirs main photo" borderRadius='rounded-full' isPriority />
             </div>
             <div className='flex flex-col gap-y-2 mt-8'>
