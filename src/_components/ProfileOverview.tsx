@@ -16,6 +16,8 @@ const ProfileOverview = () => {
                     alt="Amir Zarei"
                     borderRadius='rounded-full'
                     isPriority
+                    width={577}
+                    height={583}
                 />
             </div>
 
