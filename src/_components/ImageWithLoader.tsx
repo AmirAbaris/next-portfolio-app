@@ -31,15 +31,13 @@ const ImageWithLoader = ({ src, alt, borderRadius = 'rounded-none', className, i
             <Image
                 className={`${className} ${borderRadius} transition-opacity duration-500 ${isLoading ? "opacity-0" : "opacity-100"}`}
                 src={src}
-                sizes="100vh"
                 alt={alt}
-                fill
+                width={0}
+                height={0}
+                sizes="100vw"
                 priority={isPriority}
                 onLoadingComplete={handleLoadingComplete}
-                style={{
-                    width: '100%',
-                    height: 'auto',
-                }}
+                style={{ width: "100%", height: "auto" }}
             />
         </div>
     );
