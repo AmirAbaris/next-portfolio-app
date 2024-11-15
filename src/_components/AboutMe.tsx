@@ -11,7 +11,7 @@ const AboutMe = () => {
                 <AboutMeBorderBox iconPath='/images/medal.svg' title='Experience' subTitle='Full time frontend dev at Nilasoft' />
                 <AboutMeBorderBox iconPath='/images/person.svg' title='Education' subTitle='Computer Science Student' />
                 <p className='col-span-full'>
-                    I kicked off my journey with a 6-month internship, diving deep into Angular's magical world. After mastering components, services, and all those *ngIf/*ngFor goodies, I've continued to grow my expertise in Angular's ecosystem. Now, I'm on a mission to craft snappy, seamless user experiences and bring powerful enterprise applications to life using Angular's robust framework.
+                    I kicked off my journey with a 6-month internship, diving deep into Angular magical world. After mastering components, services, and all those *ngIf/*ngFor goodies, Ive continued to grow my expertise in Angulars ecosystem. Now, Im on a mission to craft snappy, seamless user experiences and bring powerful enterprise applications to life using Angular robust framework.
                 </p>
             </div>
         </div>
