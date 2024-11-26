@@ -15,7 +15,7 @@ const AboutMeBorderBox = ({ iconPath, title, subTitle }: AboutMeBorderBoxProps) 
         width={32}
         alt={title}
       />
-      <h1 className='font-extrabold text-lg'>{title}</h1>
+      <h1 className='font-extrabold text-lg flex-1'>{title}</h1>
       <p className='text-darkGrey'>{subTitle}</p>
     </div>
   );
