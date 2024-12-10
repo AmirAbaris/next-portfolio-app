@@ -1,13 +1,21 @@
-import dynamic from 'next/dynamic';
-import { devSkills, generalSkills } from '~/data/skills';
+import dynamic from "next/dynamic";
+import { devSkills, generalSkills } from "~/data/skills";
 
-const AboutMe = dynamic(() => import('~/_components/AboutMe'));
-const ContactMeBorderBox = dynamic(() => import('~/_components/ContactMeBorderBox'));
-const NavbarButtonList = dynamic(() => import('~/_components/NavbarButtonList'));
-const ProfileOverview = dynamic(() => import('~/_components/ProfileOverview'));
-const ProjectItemBorderBox = dynamic(() => import('~/_components/ProjectItemBorderBox'));
-const SectionHeader = dynamic(() => import('~/_components/SectionHeader'));
-const SkillCardBorderBox = dynamic(() => import('~/_components/SkillCardBorderBox'));
+const AboutMe = dynamic(() => import("~/_components/AboutMe"));
+const ContactMeBorderBox = dynamic(
+  () => import("~/_components/ContactMeBorderBox"),
+);
+const NavbarButtonList = dynamic(
+  () => import("~/_components/NavbarButtonList"),
+);
+const ProfileOverview = dynamic(() => import("~/_components/ProfileOverview"));
+const ProjectItemBorderBox = dynamic(
+  () => import("~/_components/ProjectItemBorderBox"),
+);
+const SectionHeader = dynamic(() => import("~/_components/SectionHeader"));
+const SkillCardBorderBox = dynamic(
+  () => import("~/_components/SkillCardBorderBox"),
+);
 
 export default function HomePage() {
   return (
@@ -27,16 +35,30 @@ export default function HomePage() {
         </section>
         <section className="flex flex-col gap-y-12" id="project">
           <SectionHeader subTitle="Browse My Recent" title="Projects" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ProjectItemBorderBox imagePath="/images/dash.png" title="Dashboard Project" githubLink="https://github.com/AmirAbaris/dashboard" />
-            <ProjectItemBorderBox imagePath="/images/epic.png" title="Epic Games Mock Project" githubLink="https://github.com/AmirAbaris/epic-games" />
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <ProjectItemBorderBox
+              imagePath="/images/roommate-hub.png"
+              title="Roommate Hub Project (Next.js)"
+              projectLink="https://roommate-hub-app.vercel.app/"
+              isLive={true}
+            />
+            <ProjectItemBorderBox
+              imagePath="/images/dash.png"
+              title="Dashboard Project"
+              githubLink="https://github.com/AmirAbaris/dashboard"
+            />
+            <ProjectItemBorderBox
+              imagePath="/images/epic.png"
+              title="Epic Games Mock Project"
+              githubLink="https://github.com/AmirAbaris/epic-games"
+            />
           </div>
         </section>
         <section className="flex flex-col gap-y-12" id="contact">
           <SectionHeader subTitle="Get in Touch" title="Contact Me" />
           <ContactMeBorderBox />
         </section>
-        <div className="pb-12 hidden sm:block">
+        <div className="hidden pb-12 sm:block">
           <NavbarButtonList />
         </div>
       </div>
