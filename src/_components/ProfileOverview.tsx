@@ -30,7 +30,7 @@ const ProfileOverview = () => {
         </h3>
         <div className="flex flex-wrap justify-center gap-4 p-2">
           <a
-            href="https://utfs.io/f/JziFObAbP51E8TujQeUMVPxzYsklIoDab3EBrcnfy1OphL9j"
+            href="https://utfs.io/f/JziFObAbP51E6mVkZpXEzpCRugXer4YAqcWyUhMNTkKljQPw"
             download
             target="_blank"
             rel="noopener noreferrer"
