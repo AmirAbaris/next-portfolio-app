@@ -17,6 +17,7 @@ const DropDownMenu = () => {
 
   const handleButtonClick = (key: TitleType) => {
     scrollToSection(key);
+    setOpen(false);
   };
 
   function handleMenuButton(value: boolean) {
@@ -25,7 +26,7 @@ const DropDownMenu = () => {
 
   return (
     <div className="cursor-pointer">
-      <Dropdown isOpen={open}>
+      <Dropdown isOpen={open} onClose={() => setOpen(false)}>
         <DropdownTrigger>
           <button onClick={() => handleMenuButton(open)}>
             {open ? <IoMdClose /> : <CiMenuBurger />}
