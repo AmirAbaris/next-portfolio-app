@@ -25,11 +25,11 @@ const DropDownMenu = () => {
 
   return (
     <div className="cursor-pointer">
-      <Dropdown>
+      <Dropdown isOpen={open}>
         <DropdownTrigger>
-          <div onClick={() => handleMenuButton(open)}>
+          <button onClick={() => handleMenuButton(open)}>
             {open ? <IoMdClose /> : <CiMenuBurger />}
-          </div>
+          </button>
         </DropdownTrigger>
         <DropdownMenu>
           <DropdownItem key="about" onClick={() => handleButtonClick("about")}>
