@@ -37,12 +37,6 @@ export default function HomePage() {
           <SectionHeader subTitle="Browse My Recent" title="Projects" />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <ProjectItemBorderBox
-              imagePath="/images/roommate-hub.png"
-              title="Roommate Hub Project (Next.js)"
-              projectLink="https://roommate-hub-app.vercel.app/"
-              isLive={true}
-            />
-            <ProjectItemBorderBox
               imagePath="/images/dash.png"
               title="Dashboard Project"
               githubLink="https://github.com/AmirAbaris/dashboard"
