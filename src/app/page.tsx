@@ -37,6 +37,11 @@ export default function HomePage() {
           <SectionHeader subTitle="Browse My Recent" title="Projects" />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <ProjectItemBorderBox
+              imagePath="/images/rmhub.png"
+              title="Dashboard Project"
+              isLive
+            />
+            <ProjectItemBorderBox
               imagePath="/images/dash.png"
               title="Dashboard Project"
               githubLink="https://github.com/AmirAbaris/dashboard"
