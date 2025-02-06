@@ -16,12 +16,16 @@ const AboutMe = () => {
         <AboutMeBorderBox
           iconPath="/images/medal.svg"
           title="Experience"
-          subTitle="frontend dev at Nilasoft for 3 months + 6 months internship"
+          subTitle={[
+            "Frontend Developer at Codinoob (on-going)",
+            "Frontend Developer at Nilasoft 3 (months)",
+            "Frontend Development Intern (6 months)",
+          ]}
         />
         <AboutMeBorderBox
           iconPath="/images/person.svg"
           title="Education"
-          subTitle="Computer Science Student"
+          subTitle={["Computer Science Student"]}
         />
         <p className="col-span-full">
           I kicked off my journey with a 6-month internship, diving deep into
