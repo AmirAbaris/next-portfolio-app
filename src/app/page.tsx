@@ -38,7 +38,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <ProjectItemBorderBox
               imagePath="/images/rmhub.png"
-              title="Dashboard Project"
+              title="RoommateHub"
               isLive
               projectLink="https://roommatehub.vercel.app/fa"
             />
