@@ -21,7 +21,7 @@ const DropDownMenu = () => {
   };
 
   function handleMenuButton(value: boolean) {
-    setOpen(!value);
+    setOpen((prev) => !prev);
   }
 
   return (

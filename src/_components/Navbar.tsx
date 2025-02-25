@@ -2,7 +2,7 @@ import NavbarButtonList from "./NavbarButtonList";
 import DropDownMenu from "./DropDownMenu";
 import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 
-const NavbarItems = () => {
+const  NavbarItems = () => {
     return (
         <Navbar className="mb-12 lg:mb-56">
             <NavbarBrand>
