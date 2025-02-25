@@ -26,7 +26,7 @@ const DropDownMenu = () => {
 
   return (
     <div className="cursor-pointer">
-      <Dropdown isOpen={open} onClose={() => setOpen(true)}>
+      <Dropdown isOpen={open} onClose={() => setOpen(false)}>
         <DropdownTrigger>
           <button onClick={handleMenuButton}>
             {open ? <IoMdClose /> : <CiMenuBurger />}
