@@ -20,7 +20,7 @@ const DropDownMenu = () => {
     setOpen(false);
   };
 
-  function handleMenuButton(value: boolean) {
+  function handleMenuButton() {
     setOpen((prev) => !prev);
   }
 
@@ -28,7 +28,7 @@ const DropDownMenu = () => {
     <div className="cursor-pointer">
       <Dropdown isOpen={open} onClose={() => setOpen(true)}>
         <DropdownTrigger>
-          <button onClick={() => handleMenuButton(open)}>
+          <button onClick={handleMenuButton}>
             {open ? <IoMdClose /> : <CiMenuBurger />}
           </button>
         </DropdownTrigger>
