@@ -40,7 +40,7 @@ export default function HomePage() {
               imagePath="/images/rmhub.png"
               title="RoommateHub"
               isLive
-              projectLink="https://roommatehub.vercel.app/fa"
+              projectLink="https://roommatehub.vercel.app/en"
             />
             <ProjectItemBorderBox
               imagePath="/images/dash.png"
